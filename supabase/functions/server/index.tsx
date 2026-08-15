@@ -3,7 +3,7 @@ import { cors } from "npm:hono/cors";
 import { createClient } from "jsr:@supabase/supabase-js@2.49.8";
 
 const app = new Hono();
-const ROUTE_PREFIX = "/make-server-f76250f6";
+const ROUTE_PREFIX = "/server/make-server-f76250f6";
 
 app.use("/*", cors({
   origin: "*",
