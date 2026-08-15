@@ -1,0 +1,5 @@
+# The server function contains one external Green-API webhook route, so platform
+# JWT verification is disabled for the function as a whole. Application routes
+# verify Supabase user JWTs inside the handler; the webhook verifies its own secret.
+[functions.server]
+verify_jwt = false
